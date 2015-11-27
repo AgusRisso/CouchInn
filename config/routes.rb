@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   resources :reservas
   resources :premiums
   
-  get '/premium' => 'premium#index'
-  get '/nuevotipo' =>'lodgingtypes#new'
-  get '/vertipos'=> 'lodgingtypes#index'
-  get '/listahospedajes'=> 'lodgings#index'
+  get 'premium/index'
+  get 'lodgingtypes/new'
+  get 'lodgingtypes/index'
+  get '/listahospedajes'=> 'lodgings/:id'
   get '/verhospedaje/:id'=> 'lodgings#show'
   get '/lodgingtypes/recuperar/:id' => 'lodgingtypes#recuperar'
-  get '/hospedajes/mostrar' => 'lodgings#mostrar'
+  get 'lodgings/mostrar'
 
   resources :lodgingtypes do
  
