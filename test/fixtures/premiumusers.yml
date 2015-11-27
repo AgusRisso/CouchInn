@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tarjeta: 1
+  pin: 1
+  dueno: 1
+  user_id: 1
+
+two:
+  tarjeta: 1
+  pin: 1
+  dueno: 1
+  user_id: 1
