@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'premium/index'
   get 'lodgingtypes/new'
   get 'lodgingtypes/index'
-  get '/listahospedajes'=> 'lodgings/:id'
+  get '/listahospedajes'=> 'lodgings#index'
   get '/verhospedaje/:id'=> 'lodgings#show'
   get '/lodgingtypes/recuperar/:id' => 'lodgingtypes#recuperar'
   get 'lodgings/mostrar'
